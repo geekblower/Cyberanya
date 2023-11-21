@@ -1140,17 +1140,17 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Subscribe Section
+# Register Section
 --------------------------------------------------------------*/
-#subscribe {
+#register {
   padding: 60px;
-  background: url(../img/subscribe-bg.JPG) center center no-repeat;
+  background: url(../img/register-bg.JPG) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
 }
 
-#subscribe:before {
+#register:before {
   content: "";
   background: rgba(6, 12, 34, 0.6);
   position: absolute;
@@ -1161,17 +1161,17 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-  #subscribe {
+  #register {
     background-attachment: fixed;
   }
 }
 
-#subscribe .section-header h2,
-#subscribe p {
+#register .section-header h2,
+#register p {
   color: #fff;
 }
 
-#subscribe button {
+#register button {
   border: 0;
   padding: 7px 30px;
   cursor: pointer;
@@ -1194,13 +1194,14 @@ h6 {
   border: solid 3px orange;
 }
 
-#subscribe button:hover {
+#register button:hover {
   background-color: rgba(255, 255, 255, 0);
-  border: solid 3px black;
+  border: solid 3px orange;
+  background-color: black;
 }
 
 @media (max-width: 460px) {
-  #subscribe button {
+  #register button {
     margin-top: 10px;
     left: 23%;
   }
