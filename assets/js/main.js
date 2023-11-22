@@ -7,7 +7,7 @@
 ========================================================
 */
 
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -116,7 +116,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -125,7 +125,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -135,7 +135,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -215,7 +215,7 @@
   /**
    * Buy tickets select the ticket type on click
    */
-  on('show.bs.modal', '#buy-ticket-modal', function(event) {
+  on('show.bs.modal', '#buy-ticket-modal', function (event) {
     select('#buy-ticket-modal #ticket-type').value = event.relatedTarget.getAttribute('data-ticket-type')
   })
 
@@ -232,3 +232,17 @@
   });
 
 })()
+
+function toggleButtonVisibility() {
+  var checkbox1 = document.getElementById("checkbox1");
+  var checkbox2 = document.getElementById("checkbox2");
+  var submitButton = document.getElementById("submitButton");
+
+  // Toggle button visibility based on both checkboxes being checked
+  submitButton.style.display = checkbox1.checked && checkbox2.checked ? "block" : "none";
+}
+
+function submitForm() {
+  // Implement form submission logic here
+  alert("Form submitted!");
+}
