@@ -1,5 +1,5 @@
 /**
-* Page Name: Cyberanya
+* Parent Page Name: Cyberanya
 * Uploaded: Nov 18 2023
 * Page URL: https://bit.ly/cyberanya/
 * Author: https://linkedin.com/in/geekblower
@@ -655,7 +655,7 @@ h6 {
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/about-bg.JPG");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -1302,4 +1302,21 @@ h6 {
 
 .footer .credits a:hover {
   color: orange;
+}
+
+
+/* =========================================================== */
+/* Activities Pages */
+/* =========================================================== */
+
+#activity-page-img {
+  display: block;
+  margin: -10px auto 15px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 600px;
+  border: solid 5px orange;
+  box-shadow: 3px 4px #00010427;
+  /* margin-bottom: 20px;
+  margin-top: 0px; */
 }
