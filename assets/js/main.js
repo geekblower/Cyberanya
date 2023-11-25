@@ -244,6 +244,7 @@ function toggleButtonVisibility() {
 
 function submitForm() {
   // Implement form submission logic here
+  alert("Registration will start from 27/11/2023 (Monday)!");
 }
 
 particlesJS('particles-js', {
