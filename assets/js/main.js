@@ -236,15 +236,15 @@
 function toggleButtonVisibility() {
   var checkbox1 = document.getElementById("checkbox1");
   var checkbox2 = document.getElementById("checkbox2");
-  var submitButton = document.getElementById("submitButton");
+  var payment = document.getElementById("payment");
 
   // Toggle button visibility based on both checkboxes being checked
-  submitButton.style.display = checkbox1.checked && checkbox2.checked ? "block" : "none";
+  payment.style.display = checkbox1.checked && checkbox2.checked ? "block" : "none";
 }
 
 function submitForm() {
   // Implement form submission logic here
-  alert("Registration will start from 27/11/2023 (Monday)!");
+  // alert("Registration will start from 27/11/2023 (Monday)!");
 }
 
 particlesJS('particles-js', {
